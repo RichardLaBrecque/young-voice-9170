@@ -1,0 +1,5 @@
+ <%= @professor.name %>
+ <%= "Average age: #{@professor.students.average(:age)}" %>
+ <% @professor.students.each do |student| %>
+ <%= student.name %>
+ <% end %>
